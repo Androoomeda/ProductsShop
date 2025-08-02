@@ -1,0 +1,122 @@
+[
+  {
+    "Id": 1,
+    "Name": "gamepad1",
+    "Price": 1500.0,
+    "ImageUri": "ms-appx:///images/product1.png"
+  },
+  {
+    "Id": 2,
+    "Name": "gamepad2",
+    "Price": 1200.0,
+    "ImageUri": "ms-appx:///images/product2.png"
+  },
+  {
+    "Id": 3,
+    "Name": "gamepad3",
+    "Price": 2100.0,
+    "ImageUri": "ms-appx:///images/product3.png"
+  },
+  {
+    "Id": 4,
+    "Name": "microphone1",
+    "Price": 2300.0,
+    "ImageUri": "ms-appx:///images/product4.png"
+  },
+  {
+    "Id": 5,
+    "Name": "microphone2",
+    "Price": 2500.0,
+    "ImageUri": "ms-appx:///images/product5.png"
+  },
+  {
+    "Id": 6,
+    "Name": "keyboard1",
+    "Price": 1200.0,
+    "ImageUri": "ms-appx:///images/product6.png"
+  },
+  {
+    "Id": 7,
+    "Name": "keyboard2",
+    "Price": 900.0,
+    "ImageUri": "ms-appx:///images/product7.png"
+  },
+  {
+    "Id": 8,
+    "Name": "monitor1",
+    "Price": 12000.0,
+    "ImageUri": "ms-appx:///images/product8.png"
+  },
+  {
+    "Id": 9,
+    "Name": "monitor2",
+    "Price": 700.0,
+    "ImageUri": "ms-appx:///images/product9.png"
+  },
+  {
+    "Id": 10,
+    "Name": "headphone1",
+    "Price": 1200.0,
+    "ImageUri": "ms-appx:///images/product10.png"
+  },
+  {
+    "Id": 11,
+    "Name": "headphone2",
+    "Price": 1500.0,
+    "ImageUri": "ms-appx:///images/product11.png"
+  },
+  {
+    "Id": 12,
+    "Name": "headphone3",
+    "Price": 1000.0,
+    "ImageUri": "ms-appx:///images/product12.png"
+  },
+  {
+    "Id": 13,
+    "Name": "headphone4",
+    "Price": 800.0,
+    "ImageUri": "ms-appx:///images/product13.png"
+  },
+  {
+    "Id": 14,
+    "Name": "headphone5",
+    "Price": 1100.0,
+    "ImageUri": "ms-appx:///images/product14.png"
+  },
+  {
+    "Id": 15,
+    "Name": "laptop1",
+    "Price": 65000.0,
+    "ImageUri": "ms-appx:///images/product15.png"
+  },
+  {
+    "Id": 16,
+    "Name": "laptop2",
+    "Price": 15000.0,
+    "ImageUri": "ms-appx:///images/product16.png"
+  },
+  {
+    "Id": 17,
+    "Name": "laptop3",
+    "Price": 21000.0,
+    "ImageUri": "ms-appx:///images/product17.png"
+  },
+  {
+    "Id": 18,
+    "Name": "laptop4",
+    "Price": 18000.0,
+    "ImageUri": "ms-appx:///images/product18.png"
+  },
+  {
+    "Id": 19,
+    "Name": "tablet1",
+    "Price": 7000.0,
+    "ImageUri": "ms-appx:///images/product19.png"
+  },
+  {
+    "Id": 20,
+    "Name": "tablet2",
+    "Price": 23000.0,
+    "ImageUri": "ms-appx:///images/product20.png"
+  }
+]
