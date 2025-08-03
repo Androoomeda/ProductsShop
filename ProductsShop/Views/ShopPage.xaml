@@ -15,7 +15,7 @@
                   IsItemClickEnabled="False">
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="m:Product">
-                    <Border Width="280" Height="380" Padding="10" Margin="10" 
+                    <Border Width="280" Height="380" Margin="10" 
                             CornerRadius="12" Background="White" BorderBrush="#ddd" BorderThickness="1">
                         <Grid>
                             <Grid.RowDefinitions>
@@ -25,23 +25,26 @@
                             <Border CornerRadius="12,12,0,0" Grid.Row="0">
                                 <Image Source="{x:Bind ImageUri}" Height="160" Stretch="Uniform"/>
                             </Border>
-                            <StackPanel Grid.Row="1" Background="#fafafa" Padding="6" Spacing="8">
-                                <TextBlock Text="{x:Bind Name}"  FontSize="20"
+                            <StackPanel Grid.Row="1" Background="LightGray" Padding="6" Spacing="8">
+                                <TextBlock Text="{x:Bind Name}" FontSize="20"
                                                Foreground="#333"
                                                TextWrapping="WrapWholeWords"
                                                MaxLines="1"
                                                FontWeight="SemiBold"/>
-                                <TextBlock Text="{x:Bind Price}"
-                                               FontSize="16"
+                                <TextBlock FontSize="18"
                                                FontWeight="Medium"
-                                               Foreground="#666"/>
+                                               Foreground="#666">
+                                    <Run Text="{x:Bind Price}"/>
+                                    <Run Text="₽"/>
+                                </TextBlock>
                                 <Button Content="В корзину"
                                         Background="{ThemeResource SystemControlHighlightAccentBrush}"
                                         Foreground="White"
                                         CornerRadius="8"
                                         Height="40"
                                         HorizontalAlignment="Stretch"
-                                        FontWeight="SemiBold"/>
+                                        FontWeight="SemiBold">
+                                </Button>
                             </StackPanel>
                         </Grid>
                     </Border>
