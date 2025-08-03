@@ -1,4 +1,6 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using ProductsShop.ViewModels;
+using ProductsShop.Views;
+using Windows.UI.Xaml.Controls;
 
 namespace ProductsShop
 {
@@ -7,9 +9,29 @@ namespace ProductsShop
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public ShopViewModel ShopVM { get; } = new ShopViewModel();
+
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
+            this.Loaded += async (_, __) =>
+            {
+                await ShopVM.LoadProductsAsync();
+                NavView.SelectedItem = NavView.MenuItems[0];
+                ContentFrame.Navigate(typeof(ShopPage), this);
+            };
+        }
+
+        private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        {
+            if (args.IsSettingsSelected) return;
+
+            var selectedItem = args.SelectedItemContainer as NavigationViewItem;
+
+            if(selectedItem == null) return;
+
+            if (selectedItem.Tag.ToString() == "Shop")
+                ContentFrame.Navigate(typeof(ShopPage), this);
         }
     }
 }
