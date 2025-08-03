@@ -23,12 +23,13 @@
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
                             <Border CornerRadius="12,12,0,0" Grid.Row="0">
-                                <Image Source="{x:Bind ImageUri}" Height="150" Stretch="Uniform"/>
+                                <Image Source="{x:Bind ImageUri}" Height="160" Stretch="Uniform"/>
                             </Border>
                             <StackPanel Grid.Row="1" Background="#fafafa" Padding="6" Spacing="8">
                                 <TextBlock Text="{x:Bind Name}"  FontSize="20"
                                                Foreground="#333"
                                                TextWrapping="WrapWholeWords"
+                                               MaxLines="1"
                                                FontWeight="SemiBold"/>
                                 <TextBlock Text="{x:Bind Price}"
                                                FontSize="16"
