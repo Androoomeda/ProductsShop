@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="ProductsShop.Views.ShopPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProductsShop.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:m="using:ProductsShop.Models"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Padding="12" Background="#f0f0f0">
+        <GridView ItemsSource="{x:Bind Main.ShopVM.Products, Mode=OneWay}" 
+                  SelectionMode="None"
+                  IsItemClickEnabled="False">
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="m:Product">
+                    <Border Width="280" Height="380" Padding="10" Margin="10" 
+                            CornerRadius="12" Background="White" BorderBrush="#ddd" BorderThickness="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Border CornerRadius="12,12,0,0" Grid.Row="0">
+                                <Image Source="{x:Bind ImageUri}" Height="150" Stretch="Uniform"/>
+                            </Border>
+                            <StackPanel Grid.Row="1" Background="#fafafa" Padding="6" Spacing="8">
+                                <TextBlock Text="{x:Bind Name}"  FontSize="20"
+                                               Foreground="#333"
+                                               TextWrapping="WrapWholeWords"
+                                               FontWeight="SemiBold"/>
+                                <TextBlock Text="{x:Bind Price}"
+                                               FontSize="16"
+                                               FontWeight="Medium"
+                                               Foreground="#666"/>
+                                <Button Content="В корзину"
+                                        Background="{ThemeResource SystemControlHighlightAccentBrush}"
+                                        Foreground="White"
+                                        CornerRadius="8"
+                                        Height="40"
+                                        HorizontalAlignment="Stretch"
+                                        FontWeight="SemiBold"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="5"/>
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+        </GridView>
+    </Grid>
+</Page>

@@ -14,8 +14,33 @@
     <EnableMsixTooling>true</EnableMsixTooling>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Data\images\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
+    <None Remove="Assets\images\product1.png" />
+    <None Remove="Assets\images\product10.png" />
+    <None Remove="Assets\images\product11.png" />
+    <None Remove="Assets\images\product12.png" />
+    <None Remove="Assets\images\product13.png" />
+    <None Remove="Assets\images\product14.png" />
+    <None Remove="Assets\images\product15.png" />
+    <None Remove="Assets\images\product16.png" />
+    <None Remove="Assets\images\product17.png" />
+    <None Remove="Assets\images\product18.png" />
+    <None Remove="Assets\images\product19.png" />
+    <None Remove="Assets\images\product2.png" />
+    <None Remove="Assets\images\product20.png" />
+    <None Remove="Assets\images\product3.png" />
+    <None Remove="Assets\images\product4.png" />
+    <None Remove="Assets\images\product5.png" />
+    <None Remove="Assets\images\product6.png" />
+    <None Remove="Assets\images\product7.png" />
+    <None Remove="Assets\images\product8.png" />
+    <None Remove="Assets\images\product9.png" />
+    <None Remove="Data\products.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\products.json" />
   </ItemGroup>
 </Project>
