@@ -2,121 +2,121 @@
   {
     "Id": 1,
     "Name": "Геймпад Playstation Белый",
-    "Price": 2400,
+    "Price": "2400.00",
     "ImageUri": "/Assets/images/product1.png"
   },
   {
     "Id": 2,
     "Name": "Геймпад Playstation Фиолетовый",
-    "Price": 2500,
+    "Price": "2500.00",
     "ImageUri": "/Assets/images/product2.png"
   },
   {
     "Id": 3,
     "Name": "Геймпад Nintendo Switch",
-    "Price": 5600,
+    "Price": "5600.00",
     "ImageUri": "/Assets/images/product3.png"
   },
   {
     "Id": 4,
     "Name": "Клавиатура Aula",
-    "Price": 5899,
+    "Price": "5900.00",
     "ImageUri": "/Assets/images/product4.png"
   },
   {
     "Id": 5,
     "Name": "Клавиатура Mchose",
-    "Price": 2500,
+    "Price": "2500.00",
     "ImageUri": "/Assets/images/product5.png"
   },
   {
     "Id": 6,
     "Name": "Кронштейн Onkron",
-    "Price": 1200,
+    "Price": "1200.00",
     "ImageUri": "/Assets/images/product6.png"
   },
   {
     "Id": 7,
     "Name": "Клавиатура Fifine",
-    "Price": 900,
+    "Price": "900.00",
     "ImageUri": "/Assets/images/product7.png"
   },
   {
     "Id": 8,
     "Name": "Монитор Titan Army",
-    "Price": 12000,
+    "Price": "12000.00",
     "ImageUri": "/Assets/images/product8.png"
   },
   {
     "Id": 9,
     "Name": "Мышь Valkyria",
-    "Price": 700,
+    "Price": "700.00",
     "ImageUri": "/Assets/images/product9.png"
   },
   {
     "Id": 10,
     "Name": "Мышь ATTACK SHARK R6",
-    "Price": 1200,
+    "Price": "1200.00",
     "ImageUri": "/Assets/images/product10.png"
   },
   {
     "Id": 11,
     "Name": "TWS наушники CMF",
-    "Price": 4559,
+    "Price": "4600.00",
     "ImageUri": "/Assets/images/product11.png"
   },
   {
     "Id": 12,
     "Name": "TWS наушники Huawei",
-    "Price": 2699,
+    "Price": "2700.00",
     "ImageUri": "/Assets/images/product12.png"
   },
   {
     "Id": 13,
     "Name": "TWS наушники OnePlus",
-    "Price": 4789,
+    "Price": "4800.00",
     "ImageUri": "/Assets/images/product13.png"
   },
   {
     "Id": 14,
     "Name": "Наушники Sony",
-    "Price": 8999,
+    "Price": "9000.00",
     "ImageUri": "/Assets/images/product14.png"
   },
   {
     "Id": 15,
     "Name": "Ноутбук HP",
-    "Price": 64999,
+    "Price": "65000.00",
     "ImageUri": "/Assets/images/product15.png"
   },
   {
     "Id": 16,
     "Name": "Планшет Samsung",
-    "Price": 14899,
+    "Price": "14900.00",
     "ImageUri": "/Assets/images/product16.png"
   },
   {
     "Id": 17,
     "Name": "Iphone 20",
-    "Price": 69799,
+    "Price": "69800.00",
     "ImageUri": "/Assets/images/product17.png"
   },
   {
     "Id": 18,
     "Name": "Телефон Tecno",
-    "Price": 22699,
+    "Price": "22700.00",
     "ImageUri": "/Assets/images/product18.png"
   },
   {
     "Id": 19,
     "Name": "Телефон realme 14 pro",
-    "Price": 15499,
+    "Price": "15500.00",
     "ImageUri": "/Assets/images/product19.png"
   },
   {
     "Id": 20,
     "Name": "Часы",
-    "Price": 19699,
+    "Price": "19700.00",
     "ImageUri": "/Assets/images/product20.png"
   }
 ]

@@ -1,15 +1,15 @@
-﻿using ProductsShop.Models;
-using Windows.UI.Xaml.Controls;
+﻿using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml;
+using ProductsShop.Models;
 
 namespace ProductsShop.Views
 {
-    public sealed partial class ShopPage : Page
+    public sealed partial class CartPage : Page
     {
         public MainPage Main;
 
-        public ShopPage()
+        public CartPage()
         {
             this.InitializeComponent();
         }
@@ -20,15 +20,15 @@ namespace ProductsShop.Views
             Main = e.Parameter as MainPage;
         }
 
-        private void AddToCart_Click(object sender, RoutedEventArgs e)
+        private void RemoveCart_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
             if (button != null)
             {
-                var product = button.DataContext as Product;
-                if (product != null)
+                var cartItem = button.DataContext as CartItem;
+                if (cartItem != null)
                 {
-                    Main.CartVM.AddProduct(product);
+                    Main.CartVM.RemoveCartItem(cartItem);
                 }
             }
         }
