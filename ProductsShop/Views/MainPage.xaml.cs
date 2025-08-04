@@ -9,7 +9,8 @@ namespace ProductsShop
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public ShopViewModel ShopVM { get; } = new ShopViewModel();
+        public ShopViewModel ShopVM { get; } = new ();
+        public CartViewModel CartVM { get; } = new();
 
         public MainPage()
         {
@@ -28,10 +29,13 @@ namespace ProductsShop
 
             var selectedItem = args.SelectedItemContainer as NavigationViewItem;
 
-            if(selectedItem == null) return;
-
-            if (selectedItem.Tag.ToString() == "Shop")
-                ContentFrame.Navigate(typeof(ShopPage), this);
+            if(selectedItem != null)
+            {
+                if (selectedItem.Tag.ToString() == "Shop")
+                    ContentFrame.Navigate(typeof(ShopPage), this);
+                else if (selectedItem.Tag.ToString() == "Cart")
+                    ContentFrame.Navigate(typeof(CartPage), this);
+            }
         }
     }
 }

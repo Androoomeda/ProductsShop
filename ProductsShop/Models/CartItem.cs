@@ -2,7 +2,7 @@
 
 namespace ProductsShop.Models
 {
-    internal class CartItem : INotifyPropertyChanged
+    public class CartItem : INotifyPropertyChanged
     {
         public Product Product { get; set; }
 

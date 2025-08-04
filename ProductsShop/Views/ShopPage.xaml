@@ -43,7 +43,8 @@
                                         CornerRadius="8"
                                         Height="40"
                                         HorizontalAlignment="Stretch"
-                                        FontWeight="SemiBold">
+                                        FontWeight="SemiBold"
+                                        Click="AddToCart_Click">
                                 </Button>
                             </StackPanel>
                         </Grid>
