@@ -23,12 +23,20 @@
         <Border Background="#4ac4f7" CornerRadius="12" Padding="16" 
                 Margin="0,0,0,20" Grid.Row="0">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Spacing="8">
-                <TextBlock Text="Количество товаров:" FontSize="20" FontWeight="Bold"/>
-                <TextBlock Text="{x:Bind Main.CartVM.TotalQuantity, Mode=OneWay}" FontSize="20" FontWeight="Bold"/>
-                <TextBlock Text="Сумма:" FontSize="20" FontWeight="Bold" Margin="20,0,0,0"/>
-                <TextBlock Text="{x:Bind Main.CartVM.TotalPrice, Mode=OneWay}" FontSize="20" FontWeight="Bold"/>
+                <TextBlock Text="Количество товаров:" FontSize="20" FontWeight="Bold"
+                           VerticalAlignment="Center"/>
+                <TextBlock Text="{x:Bind Main.CartVM.TotalQuantity, Mode=OneWay}" FontSize="20" FontWeight="Bold"
+                           VerticalAlignment="Center"/>
+                <TextBlock Text="Сумма:" FontSize="20" FontWeight="Bold" Margin="20,0,0,0" VerticalAlignment="Center"/>
+                <TextBlock FontSize="20"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center">
+                <Run Text="{x:Bind Main.CartVM.TotalPrice, Mode=OneWay}"/>
+                <Run Text="₽"/> 
+                </TextBlock>
 
-                <TextBlock Text="Сортировка:" FontSize="18" FontWeight="Bold" Margin="20,0,0,0" VerticalAlignment="Center"/>
+                <TextBlock Text="Сортировка:" FontSize="18" FontWeight="Bold" Margin="20,0,0,0"
+                           VerticalAlignment="Center"/>
                 <ComboBox Width="150" FontSize="18"
                   SelectedIndex="{x:Bind Main.CartVM.CurrentSortType, Mode=TwoWay, Converter={StaticResource SortTypeToIndexConverter}}">
                     <ComboBoxItem Content="Название"/>
