@@ -7,7 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     xmlns:m="using:ProductsShop.Models"
+    xmlns:utils="using:ProductsShop.Utilities"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <utils:SortTypeToIndexConverter x:Key="SortTypeToIndexConverter"/>
+    </Page.Resources>
 
     <Grid Padding="12" Background="#f0f0f0">
         <Grid.RowDefinitions>
@@ -22,6 +27,14 @@
                 <TextBlock Text="{x:Bind Main.CartVM.TotalQuantity, Mode=OneWay}" FontSize="20" FontWeight="Bold"/>
                 <TextBlock Text="Сумма:" FontSize="20" FontWeight="Bold" Margin="20,0,0,0"/>
                 <TextBlock Text="{x:Bind Main.CartVM.TotalPrice, Mode=OneWay}" FontSize="20" FontWeight="Bold"/>
+
+                <TextBlock Text="Сортировка:" FontSize="18" FontWeight="Bold" Margin="20,0,0,0" VerticalAlignment="Center"/>
+                <ComboBox Width="150" FontSize="18"
+                  SelectedIndex="{x:Bind Main.CartVM.CurrentSortType, Mode=TwoWay, Converter={StaticResource SortTypeToIndexConverter}}">
+                    <ComboBoxItem Content="Название"/>
+                    <ComboBoxItem Content="Стоимость ↓"/>
+                    <ComboBoxItem Content="Стоимость ↑"/>
+                </ComboBox>
             </StackPanel>
         </Border>
 

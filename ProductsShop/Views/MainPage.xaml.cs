@@ -18,7 +18,7 @@ namespace ProductsShop
             this.Loaded += async (_, __) =>
             {
                 await ShopVM.LoadProductsAsync();
-                await CartVM.LoadCartItemsAsync();
+                await CartVM.LoadCartAsync();
                 NavView.SelectedItem = NavView.MenuItems[0];
                 ContentFrame.Navigate(typeof(ShopPage), this);
             };
